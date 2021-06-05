@@ -7,13 +7,13 @@ from flask_apscheduler import APScheduler
 
 @app.route('/all')
 def all():
-    conn = sqlite3.connect('./static/data/unknown.db')
+    conn = sqlite3.connect('./static/data/nspire.db')
     curs = conn.cursor()
-    moods = []
-    rows = curs.execute("SELECT * from moods")
+    userInputs = []
+    rows = curs.execute("SELECT * from userInputs")
     for row in rows:
-        mood = {'mood': row[0], 'date': row[1]}
-        moods.append(mood)
+        mood = {'mood': row[0], 'timestamp': row[1]}
+        userInputs.append(mood)
     conn.close()
     return render_template('all.html')
 
