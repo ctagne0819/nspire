@@ -1,19 +1,24 @@
-from flask import Flask, render_template, request, current_app as current_app
+from flask import Flask, request, render_template, current_app as app
 from sense_hat import SenseHat
-import sqlite3
 from flask_apscheduler import APScheduler
+import sqlite3
 
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 
 @app.route('/all')
 def all():
     conn = sqlite3.connect('./static/data/nspire.db')
     curs = conn.cursor()
-    userInputs = []
-    rows = curs.execute("SELECT * from userInputs")
+    userInput = []
+    rows = curs.execute("SELECT * from userInput")
     for row in rows:
-        mood = {'mood': row[0], 'timestamp': row[1]}
-        userInputs.append(mood)
+        mood = {'mood': row[1], 'timestamp': row[2]}
+        userInput.append(mood)
     conn.close()
     return render_template('all.html')
 
