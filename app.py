@@ -7,8 +7,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    request.method == 'POST'
     return render_template('index.html')
 
+@app.route('/welcome.html', methods=['GET'])
+def welcome():
+    request.method == 'GET'
+    return render_template('welcome.html')
 
 @app.route('/all')
 def all():

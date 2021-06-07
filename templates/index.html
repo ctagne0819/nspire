@@ -1,11 +1,26 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>title</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="welcome.css">
     </head>
-    <body>
-        <h1>filler text. FILLER TEXT.</h1>
-    </body>
+
+<body>
+<div class="form-popup" id="myForm">
+    <form action="/welcome.html" method="POST" class="form-container">
+        <h1>Welcome!</h1>
+        
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+        <a href="welcome.html"><button type="submit" class="btn">Continue</button></a>
+    </form>
+</div>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "welcome.html";
+    }
+</script>
+</body>
 </html>
