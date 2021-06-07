@@ -4,7 +4,7 @@
 {box-sizing: border-box;}
 
 .open-button {
-    background-color: #555;
+    background-color:  white;
     color:white;
     padding: 16px 20px;
     border: none;
@@ -21,7 +21,7 @@
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #f1f1f1;
+    border: 3px solid #718355;
     z-index: 9;
   }
 
@@ -36,8 +36,7 @@
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
-}
+    background: #718355
 
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: #ddd;
@@ -45,7 +44,7 @@
   }
 
 .form-container .btn {
-    background-color: #04AA6D;
+    background-color: #87986a;
     color: white;
     padding: 16px 20px;
     border: none;
