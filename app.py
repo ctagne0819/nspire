@@ -10,9 +10,9 @@ def index():
     request.method == 'POST'
     return render_template('index.html')
 
-@app.route('/welcome.html', methods=['GET'])
+@app.route('/welcome', methods=['POST'])
 def welcome():
-    request.method == 'GET'
+    request.method == 'POST'
     return render_template('welcome.html')
 
 @app.route('/all')
