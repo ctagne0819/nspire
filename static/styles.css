@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Helvetica, sans-serif;
     margin: 5em;
     text-align: center;
     background-color: #cfe1b9;
@@ -13,4 +13,9 @@ h1 {
     border-width: 10px;
     border-color: #87986a;
     text-shadow: 2px 2px 4px salmon;
+}
+
+.button {
+color: green;
+
 }
