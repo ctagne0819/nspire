@@ -1,7 +1,16 @@
-{box-sizing: border-box;}
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 5em;
+    text-align: center;
+    background-color: teal;
+}
 
 .open-button {
+<<<<<<< HEAD
     background-color:white;
+=======
+    background-color: white;
+>>>>>>> 81e5bff5adef7084e1fd0a8e351e74c4dfc6fe7f
     color:white;
     padding: 16px 20px;
     border: none;
@@ -34,6 +43,7 @@
     margin: 5px 0 22px 0;
     border: none;
     background: #718355
+}
 
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: #ddd;
