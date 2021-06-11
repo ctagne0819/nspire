@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, current_app as app
 from sense_hat import SenseHat
 import sqlite3
+import requests
 
 app = Flask(__name__)
 
@@ -11,7 +12,11 @@ def index():
 
 @app.route('/welcome', methods=['GET','POST'])
 def welcome():
-    return render_template('welcome.html')
+    response = requests.get('https://zenquotes.io/api/random') 
+    #(.)means theres a variable. response is a variable that i create not native to python
+    data = response.json()
+    print (data)
+    return render_template('welcome.html', data = data)
 
 @app.route('/all')
 def all():

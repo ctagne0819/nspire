@@ -1,22 +1,22 @@
 html {
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 8em;
     text-align: center;
-    background-color: #cfe1b9;
+    background-color:#cfe1b9;
 }
 
 h1 {
     font-style: normal;
-    color: #718355;
+    color:#718355;
     text-align: center;
     border: double;
-    border-width: 10px;
-    border-color: #87986a;
-    text-shadow: 2px 2px 4px salmon;
+    border-width: 14px;
+    border-color: #718355;
+    text-shadow: 2px 2px 4px white;
 }
