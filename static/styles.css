@@ -15,8 +15,11 @@ h1 {
     text-shadow: 2px 2px 4px teal;
 }
 
-.continue-button {
+.btn {
     background-color: teal;
     color: green;
+    border: none;
+    padding:15px 32px;
+    font-size: 16px;
 
 }
