@@ -11,11 +11,12 @@ h1 {
     text-align: center;
     border: double;
     border-width: 10px;
-    border-color: #87986a;
-    text-shadow: 2px 2px 4px salmon;
+    border-color:#87986a;
+    text-shadow: 2px 2px 4px teal;
 }
 
-.button {
-color: green;
+.continue-button {
+    background-color: teal;
+    color: green;
 
 }
