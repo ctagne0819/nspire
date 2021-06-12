@@ -9,6 +9,55 @@
     <body>
         <h1>Quote of the day: {{data[0]['q']}}</h1> <!--[means that there is only 1 inside the data not multiple. 0 is the first data]-->
         <h2>Author: {{data[0]['a']}}</h2> 
-        <h1>Hello, how are you feeling right now?</h1>      
+        <hr size="2px" width="900px" color="#cfe1b9">
+        <h1> Hello, how are you feeling today? </h1>
+        <form action="connect.php" method="POST"></form>
+            <!-- <button type="submit" formmethod="POST" name="happy">
+                happy
+                <script>
+                    onEvent("happy", "click", function(event) {
+                        setScreen("/all")
+                    });
+                </script>
+            </button>
+            <button type="submit" formmethod="POST" name="sad">
+                sad
+            </button>
+            <button type="submit" formmethod="POST" name="okay(neutral)">
+                okay (neutral)
+            </button>
+            <button type="submit" formmethod="POST" name="tired/exhausted">
+                tired/exhausted
+            </button> -->
+           
+            <!-- <label for="mood-selector">Hello, how are you feeling today?</label>
+
+            <select name="moods" id="moods">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="okay">Okay (neutral)</option>
+                <option value="tired">Tired/exhausted</option>
+            </select> -->
+
+                <input type="button" id="mood" value="Happy">
+                <input type="button" id="mood" value="Sad">
+                <input type="button" id="mood" value="Okay (neutral)">
+                <input type="button" id="mood" value="Tired/exhausted">
+            
+              
+                <!-- <script>
+                    var table = document.getElementById('mood');
+                    var selected = table.getElementsByClassName('selected');
+                    table.onclick = highlight;
+                
+                function fnselect(){
+                    var element = document.querySelectorAll('.selected');
+                    if(element[0]!== undefined){ //it must be selected
+                     alert(element[0].children[0].firstChild.data);
+                    }
+                }
+              </script> --> 
+
+        </form>
     </body>
 </html>

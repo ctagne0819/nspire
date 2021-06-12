@@ -3,6 +3,8 @@ from sense_hat import SenseHat
 import sqlite3
 import requests
 
+sense = SenseHat()
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -20,6 +22,16 @@ def welcome():
 
 @app.route('/all')
 def all():
+    # happy = request.form['happy']
+    # sense.show_message(happy)
+    # sad = request.form['sad']
+    # sense.show_message(sad)
+    # okay = request.form['okay(neutral)']
+    # sense.show_message(neutral)
+    # tired = request.form['tired/exhausted']
+    # sense.show_message(tired/exhausted)
+    #those lines dont work but idk how to trigger the buttons to send info to the database
+    #i tried to use javascript but i think that its not working bc there are 4 separate buttons for one db column
     conn = sqlite3.connect('./static/data/nspire.db')
     curs = conn.cursor()
     userInput = []
