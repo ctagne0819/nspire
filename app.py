@@ -3,7 +3,7 @@ from sense_hat import SenseHat
 import sqlite3
 import requests
 
-sense = SenseHat()
+#sense = SenseHat()
 
 app = Flask(__name__)
 
