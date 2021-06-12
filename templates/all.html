@@ -8,7 +8,7 @@
         <h1>Mood Tracker</h1>
         {% for mood in moods %}
         <p>{{mood["mood"]}} from {{mood["date"]}}</p>
-        <form action="connect.php" method="post">
+        <form action="/static" method="post">
             <input type="hidden" name="mood" value="{{mood['mood']}}" />
             <input type="submit" value="Display Now" />
         </form>
