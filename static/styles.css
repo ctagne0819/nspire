@@ -18,14 +18,14 @@ h1 {
     border: double;
     border-width: 14px;
     border-color: #718355;
-    text-shadow: 2px 2px 4px white;
+    text-shadow: 2px 2px 4px whitesmoke;
 }
 
 .btn {
-    background-color: teal;
-    color: green;
+    background-color:palegreen;
+    color:black;
     border: none;
-    padding:15px 32px;
-    font-size: 16px;
+    font-size: 14px;
+    border-style:solid;
 
 }
