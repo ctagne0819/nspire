@@ -9,5 +9,26 @@
     <body >
         <h1>Quote of the day: {{data[0]['q']}}</h1> <!--[means that there is only 1 inside the data not multiple. 0 is the first data]-->
         <h2>Author: {{data[0]['a']}}</h2>
+        <hr size="2px" width="900px" color="#cfe1b9">
+        <h1> Rate your mood </h1>
+        <form action="/all" method="POST"></form>
+            <button type="submit" name="happy">
+                happy
+                <script>
+                    onEvent("happy", "click", function(event) {
+                        setScreen("/all")
+                    });
+                </script>
+            </button>
+            <button type="submit" name="sad">
+                sad
+            </button>
+            <button type="submit" name="okay(neutral)">
+                okay (neutral)
+            </button>
+            <button type="submit" name="tired/exhausted">
+                tired/exhausted
+            </button>
+        </form>
     </body>
 </html>
